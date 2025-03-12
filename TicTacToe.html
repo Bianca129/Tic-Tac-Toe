@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="index.js"></script>
+    <title>Tic Tac Toe</title>
+
+</head>
+
+<body>
+    <h1>Tic Tac Toe</h1>
+    <div>
+        <table>
+            <tr>
+                <td class="box" onclick="setzen(this)" id="0"></td>
+                <td class="box" onclick="setzen(this)" id="1"></td>
+                <td class="box" onclick="setzen(this)" id="2"></td>
+            </tr>
+            <tr>
+                <td class="box" onclick="setzen(this)" id="3"></td>
+                <td class="box" onclick="setzen(this)" id="4"></td>
+                <td class="box" onclick="setzen(this)" id="5"></td>
+            </tr>
+            <tr>
+                <td class="box" onclick="setzen(this)" id="6"></td>
+                <td class="box" onclick="setzen(this)" id="7"></td>
+                <td class="box" onclick="setzen(this)" id="8"></td>
+            </tr>
+        </table>
+
+        <div>
+            <p id="spielstand">Spielstand (O vs. X): 0:0</p>
+        </div>
+        <!-- <button><a class="button" href="javascript:location.reload()">Reload</a></button> -->
+         <div style="text-align: center;">
+        <button onclick="replay()">Neustart</button>
+         </div>
+        <p class="ergebnis">Spieler 1 (O) ist an der Reihe.</p>
+
+</body>
+
+</html>
